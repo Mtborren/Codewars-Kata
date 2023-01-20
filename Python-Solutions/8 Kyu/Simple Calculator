@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5810085c533d69f4980001cf/train/python
+8
+
+    def calculator(x,y,op):
+        if str(x).isnumeric() and str(y).isnumeric():
+            return x + y if op == "+" else x - y if op == "-" else x * y if op == "*" else x / y if op == "/" else "unknown value"
+        else:
+            return "unknown value"
