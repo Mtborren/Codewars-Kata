@@ -1,8 +1,10 @@
 https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/python
 
-    def expanded_form(num):
-        newstring = []
-        for idx, nums in enumerate(str(num)[::-1]):
-            if int(nums) != 0:
-                newstring.append(nums + ('0' * idx))
-        return ' + '.join(newstring[::-1])
+    def alphabet_position(text):
+        text = text.lower()
+        newseq = []
+        for lets in text:
+            lets = str(ord(lets) - 96)
+            if lets > '0':
+                newseq.append(lets)
+        return " ".join(newseq)
