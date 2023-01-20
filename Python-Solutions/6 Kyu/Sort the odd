@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python
+6
+
+    def sort_array(source_array):
+        odd_nums = []
+        for nums in source_array:
+            if nums % 2 != 0:
+                odd_nums.append(nums)
+        odd_sorted = sorted(odd_nums)
+        new_array = []
+        count = 0
+        for nums in source_array:
+            print(nums)
+            if nums % 2 == 0:
+                new_array.append(nums)
+            else:
+                new_array.append(odd_sorted[count])
+                count+=1
+        return new_array
