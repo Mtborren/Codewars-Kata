@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58649884a1659ed6cb000072/train/python
+8
+
+    def update_light(current):
+        return 'yellow' if current == 'green' else 'red' if current == 'yellow' else 'green'
