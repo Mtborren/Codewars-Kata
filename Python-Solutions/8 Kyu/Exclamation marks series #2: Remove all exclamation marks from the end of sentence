@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57faece99610ced690000165/train/python
+8
+
+    def remove(s):
+        count = 0
+        for x in s[::-1]:
+            if x == "!":
+                 count+=1
+            else:
+                break
+        return s[:-count] if s[-1] == "!" else s
