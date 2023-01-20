@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/python
+7
+
+    def longest(a1, a2):
+        newarr = []
+        for let1 in a1:
+            for let2 in a2:
+                if let1 not in newarr:
+                    newarr.append(let1)
+                elif let2 not in newarr:
+                    newarr.append(let2)
+        return "".join(sorted(newarr))
