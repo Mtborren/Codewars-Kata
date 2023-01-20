@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/python
+
+    def abbrev_name(name):
+        name = name.upper()
+        sep = name.split(" ")
+        first = sep[0]
+        last = sep[1]
+        first_initial = first[0]
+        last_initial = last[0]
+        initials = first_initial + "." + last_initial
+        return initials
