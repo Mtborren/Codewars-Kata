@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/571d42206414b103dc0006a1/python
+8
+
+    def arr(n=False): 
+        return list(range(0, n))
