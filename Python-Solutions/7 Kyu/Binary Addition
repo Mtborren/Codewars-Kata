@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/551f37452ff852b7bd000139/train/python
+
+    def add_binary(a,b):
+        dec = bin(a + b)
+        return dec[2:]
