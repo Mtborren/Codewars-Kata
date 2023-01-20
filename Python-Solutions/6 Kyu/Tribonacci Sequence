@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/556deca17c58da83c00002db/train/python
+
+    def tribonacci(signature, n):
+        if n == 0:
+            return []
+        elif n < len(signature):
+            return signature[0:n]
+        while len(signature) < n:
+            newnum = (signature[len(signature) - 3]) + (signature[(len(signature) - 2)] + signature[len(signature) - 1])
+            signature.append(newnum)
+        return signature
