@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/python
+    
+    def high(x):
+        spl = x.split(" ")
+        arr = []
+        for words in spl:
+            nums = [ord(letters) - 96 for letters in words]
+            Sum = sum(nums)
+            arr.append(Sum)
+
+        index = arr.index(max(arr))
+        return spl[index]
