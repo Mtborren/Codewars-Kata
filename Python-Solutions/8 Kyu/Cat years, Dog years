@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/python
+8
+
+    def human_years_cat_years_dog_years(human_years):
+        count = 0
+        cat = 0
+        dog = 0
+        while count < human_years:
+            count += 1
+            if cat == 0:
+                cat += 15
+            elif cat == 15:
+                cat += 9
+            elif cat > 23:
+                cat += 4
+            if dog == 0:
+                dog += 15
+            elif dog == 15:
+                dog += 9
+            elif dog > 23:
+                dog += 5
+        return [human_years, cat, dog]
