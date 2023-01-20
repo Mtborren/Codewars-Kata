@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/539ee3b6757843632d00026b/train/python
+7
+
+    def capitals(word):
+        ind = []
+        for index, x in enumerate(word):
+            if x.isupper():
+                ind.append(index)
+        return ind
