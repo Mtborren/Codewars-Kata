@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5a360620f28b82a711000047/train/python
+8
+
+    def define_suit(card):
+        return 'clubs' if card[-1] == 'C' else 'spades' if card[-1] == 'S' else 'hearts' if card[-1] == 'H' else 'diamonds'
