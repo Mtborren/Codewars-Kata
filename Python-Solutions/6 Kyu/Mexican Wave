@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/train/python
+6
+
+    def wave(people):
+        if len(people) == 0:
+            return []
+        else:
+            people = people.lower()
+            wave_list = []
+            for x, y in enumerate(people):
+                if y == ' ':
+                    pass
+                else:
+                    wave_list.append(people[:x] + people[x].upper() + people[x+1:])
+            return wave_list
