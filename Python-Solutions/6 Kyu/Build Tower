@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/python
+
+    def tower_builder(n_floors):
+        levels = []
+        width = (n_floors * 2) - 1
+        for x in range(1, 2 * n_floors, 2):
+            blocks = x * '*'
+            line = blocks.center(width)
+            levels.append(line)
+        return levels
