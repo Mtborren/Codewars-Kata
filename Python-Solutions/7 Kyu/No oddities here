@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/51fd6bc82bc150b28e0000ce/train/python
+7
+
+    def no_odds(values):
+        even = []
+        for nums in values:
+            if nums % 2 == 0:
+                even.append(nums)
+        return even
