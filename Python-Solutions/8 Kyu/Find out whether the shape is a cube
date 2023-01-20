@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58d248c7012397a81800005c/train/python
+8
+
+    def cube_checker(volume, side):
+        return volume == side**3 and volume > 0
