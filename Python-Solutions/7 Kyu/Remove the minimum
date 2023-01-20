@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/python
+
+    def remove_smallest(numbers):
+        if len(numbers) <= 1:
+            return []
+        newnums = []
+        for nums in numbers:
+            newnums.append(nums)
+            newnums.remove(sorted(newnums)[0])
+        return newnums
