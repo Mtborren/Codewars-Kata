@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/570597e258b58f6edc00230d/train/python
+8
+
+    def array(string):
+        newstring = []
+        for x in string.split(","):
+            newstring.append(x.strip())
+        if len(newstring) >= 3:
+            return " ".join(newstring[1:-1])
