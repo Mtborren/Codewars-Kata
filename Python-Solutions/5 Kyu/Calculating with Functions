@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39/train/python
+5
+
+    def zero(n = None): return 0 if n is None else int(n(0)) 
+    def one(n = None): return 1 if n is None else int(n(1)) 
+    def two(n = None): return 2 if n is None else int(n(2)) 
+    def three(n = None): return 3 if n is None else int(n(3)) 
+    def four(n = None): return 4 if n is None else int(n(4)) 
+    def five(n = None): return 5 if n is None else int(n(5)) 
+    def six(n = None): return 6 if n is None else int(n(6))
+    def seven(n = None): return 7 if n is None else int(n(7)) 
+    def eight(n = None): return 8 if n is None else int(n(8)) 
+    def nine(n = None): return 9 if n is None else int(n(9)) 
+    def plus(z): return lambda x: x + z
+    def minus(z): return lambda x: x - z
+    def times(z): return lambda x: x * z
+    def divided_by(z): return lambda x: x / z
