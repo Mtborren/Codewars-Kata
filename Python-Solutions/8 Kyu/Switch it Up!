@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/python
+8
+
+    def switch_it_up(n):
+        return "Zero" if n ==0 else "One" if n == 1 else "Two" if n == 2 else "Three" if n == 3 else "Four" if n == 4 else "Five" if n == 5 else "Six" if n == 6 else "Seven" if n == 7 else "Eight" if n == 8 else "Nine"
