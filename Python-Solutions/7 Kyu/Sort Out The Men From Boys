@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/python
+7
+
+    def men_from_boys(arr):
+        even = []
+        odd = []
+        for x in arr:
+            if x % 2 == 0 and x not in even:
+                even.append(x)
+            elif x % 2 != 0 and x not in odd:
+                odd.append(x)
+        even.sort()
+        odd.sort(reverse=True)
+        for x in odd:
+            if x not in even:
+                even.append(x)
+        return even
