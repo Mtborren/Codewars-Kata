@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/python
+
+
+    def duplicate_count(text):
+        duplicates = 0
+        res = {}
+        text = text.upper()
+        for char in text:
+            res[char] = text.count(char)
+        count = res.values()
+        for nums in count:
+            if nums > 1:
+                duplicates += 1
+        return duplicates
