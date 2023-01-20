@@ -1,0 +1,24 @@
+https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/python
+6
+
+    def stock_list(list_of_art, list_of_cat):
+        if list_of_art == [] or list_of_cat == []:
+            return ""
+        stock = []
+        for art in list_of_art:
+            stock.append(art.split(" "))
+        cat_stock = {}
+        for x in list_of_cat:
+            if x not in cat_stock:
+                cat_stock[x] = 0
+        for art in stock:
+            cat = art[0][0:1]
+            count = int(art[1])
+            if cat not in cat_stock and cat in list_of_cat:
+                cat_stock[cat] = count
+            elif cat in cat_stock and cat in list_of_cat:
+                cat_stock[cat] += count
+        newstring = []
+        for x in cat_stock:
+            newstring.append("(" + x + " : " + str(cat_stock[x]) + ")")
+        return " - ".join(newstring)
