@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/55b051fac50a3292a9000025/train/python
+7
+
+    def filter_string(string):
+        nums = []
+        for x in string:
+            if x.isnumeric():
+                nums.append(x)
+        return int("".join(nums))
