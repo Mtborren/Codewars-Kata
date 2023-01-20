@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/59a8570b570190d313000037/train/python
+7
+
+    def sum_cubes(n):
+        nums = list(range(1, n+1))
+        cubednums = []
+        if len(nums) == 1:
+            return 1
+        else:
+            for x in nums:
+                cubednums.append(x**3)
+        return sum(cubednums)
