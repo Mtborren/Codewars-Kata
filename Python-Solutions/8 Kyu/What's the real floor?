@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/python
+8
+
+    def get_real_floor(n):
+        return n if n <= 0 else n-1 if n < 13 else n-2
