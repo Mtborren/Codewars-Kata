@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/58223370aef9fc03fd000071/train/python
+6
+
+    def dashatize(n):
+        num = n
+        newnum = []
+        if n == None:
+            return "None"
+        elif n < 0:
+            num = 0 - n
+        for x in str(num):
+            if int(x) % 2 == 0:
+                newnum.append(x)
+            elif int(x) % 2 != 0:
+                newnum.append('-')
+                newnum.append(x)
+                newnum.append('-')
+        return "".join(newnum).strip('-').replace('--', '-')
