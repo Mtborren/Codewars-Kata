@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58dbdccee5ee8fa2f9000058/train/python
+8
+
+    def same_case(a, b): 
+        if a.isalpha() == False or b.isalpha() == False:
+            return -1
+        elif a.isupper() and b.isupper() or a.islower() and b.islower():
+            return 1
+        else:
+            return 0
