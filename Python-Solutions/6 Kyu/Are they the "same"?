@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/550498447451fbbd7600041c/train/python
+
+    def comp(array1, array2):
+        if type(array1) != list or type(array2) != list:
+            return False
+        squared = [nums ** 2 for nums in array1]
+        squared.sort()
+        array2.sort()
+        return squared == array2
