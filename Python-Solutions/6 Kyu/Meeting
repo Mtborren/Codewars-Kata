@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/python
+6
+
+    def meeting(s):
+        names = s.split(";")
+        newnames = []
+        for x in names:
+            revname = ", ".join(x.split(":")[::-1])
+            newnames.append(revname.lower())
+        newnames.sort()
+        namestr = ""
+        for x in newnames:
+            namestr += "(" + x.upper() + ")"
+        return namestr
