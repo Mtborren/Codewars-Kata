@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/568dc014440f03b13900001d/train/python
+8
+
+    def get_drink_by_profession(param):
+        param = param.lower()
+        return "Patron Tequila" if param == "jabroni" else "Anything with Alcohol" if param == "school counselor" else "Hipster Craft Beer" if param == "programmer" else "Moonshine" if param == "bike gang member" else "Your tax dollars" if param == "politician" else "Cristal" if param == "rapper" else "Beer"
