@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/530e15517bc88ac656000716/train/python
+5
+
+    def rot13(message):
+        rot = []
+        for lets in message:
+            repo = ord(lets) + 13
+            if lets.isalpha() == False:
+                rot.append(lets)
+            elif lets.islower() and repo in range(96, 123):
+                rot.append(chr(repo))
+            elif lets.islower() and repo > 122:
+                rot.append(chr(repo-26))
+            elif lets.isupper() and repo in range(65, 91):
+                rot.append(chr(repo))
+            elif lets.isupper() and repo > 90:
+                rot.append(chr(repo-26))
+        return "".join(rot)
