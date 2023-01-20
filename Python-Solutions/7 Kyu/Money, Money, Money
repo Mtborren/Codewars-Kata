@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/563f037412e5ada593000114/train/python
+7
+
+    def calculate_years(pri, inter, tax, des):
+        year = 0
+        while pri < des:
+            gain = pri * inter
+            loss = (pri * inter) * tax
+            pri += gain - loss
+            year += 1
+        return year
