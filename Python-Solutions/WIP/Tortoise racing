@@ -1,0 +1,24 @@
+
+https://www.codewars.com/kata/55e2adece53b4cdcb900006c/train/python
+6
+
+    def race(v1, v2, g):
+        if v1 >= v2:
+            return None
+        else:
+            afps = (v1/60)/60
+            bfps = (v2/60)/60
+            timer = 0
+            apos = g
+            bpos = 0
+            while bpos < apos:
+                apos += afps
+                bpos += bfps
+                timer += 1
+            hours = (timer/3600)
+            fullhours = int(hours)
+            minutes = (hours-fullhours)*60
+            fullminutes = int(minutes)
+            seconds = (minutes-fullminutes)*60       
+            fullseconds = int(seconds)
+            return [fullhours, fullminutes, fullseconds]
