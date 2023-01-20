@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/python
+
+    def basic_op(operator, value1, value2):
+        #your code here
+        num1 = int(value1)
+        num2 = int(value2)
+        if operator == '+':
+            sum = num1 + num2
+            return sum
+        elif operator == '-':
+            sum = num1 - num2
+            return sum
+        elif operator == '*':
+            sum = num1 * num2
+            return sum
+        elif operator == '/':
+            sum = num1 / num2
+            return sum
