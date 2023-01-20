@@ -1,0 +1,24 @@
+https://www.codewars.com/kata/59377c53e66267c8f6000027/train/python
+7
+
+    def alphabet_war(fight):
+        r_side = 0
+        l_side = 0
+        for x in fight:
+            if x == 'w':
+                l_side += 4
+            elif x == 'p':
+                l_side += 3
+            elif x == 'b':
+                l_side += 2
+            elif x == 's':
+                l_side += 1
+            if x == 'm':
+                r_side += 4
+            elif x == 'q':
+                r_side += 3
+            elif x == 'd':
+                r_side += 2
+            elif x == 'z':
+                r_side += 1
+        return "Right side wins!" if r_side > l_side else "Left side wins!" if l_side > r_side else "Let's fight again!"
