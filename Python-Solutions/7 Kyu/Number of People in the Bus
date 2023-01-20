@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/python
+
+    def number(bus_stops):
+        count = 0
+        for people in bus_stops:
+            enter = people[0]
+            exit = people[1]
+            total = enter - exit
+            count += total
+        return count
