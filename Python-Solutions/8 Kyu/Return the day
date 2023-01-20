@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59dd3ccdded72fc78b000b25/train/python
+8
+
+    def whatday(num):
+        return "Sunday" if num == 1 else "Monday" if num == 2 else "Tuesday" if num == 3 else "Wednesday" if num == 4 else "Thursday" if num == 5 else "Friday" if num == 6 else "Saturday" if num == 7 else "Wrong, please enter a number between 1 and 7"
