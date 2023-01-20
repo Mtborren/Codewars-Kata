@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/python
+6
+
+    def count(string):
+        newdict = {}
+        for lets in string:
+            newdict[lets] = string.count(lets)
+        return newdict
