@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/52f3149496de55aded000410/train/python
+7
+
+    def sum_digits(number):
+        numlist = list(str(number))
+        nums = []
+        for x in numlist:
+            if x.isnumeric():
+                nums.append(int(x))
+        return sum(nums)
