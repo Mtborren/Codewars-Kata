@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5663f5305102699bad000056/python
+7
+
+    def mxdiflg(a1, a2):
+        if not a1 or not a2:
+            return -1
+        else:
+            a1max = len(max(a1, key=len))
+            a1min = len(min(a1, key=len))
+            a2max = len(max(a2, key=len))
+            a2min = len(min(a2, key=len))
+
+            return max(a1max - a2min, a2max - a1min)
