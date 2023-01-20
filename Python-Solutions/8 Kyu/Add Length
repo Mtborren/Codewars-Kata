@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/python
+8
+
+    def add_length(str_):
+        str_count = []
+        for x in str_.split(" "):
+            str_count.append(x + " " + str(len(x)))
+        return str_count
