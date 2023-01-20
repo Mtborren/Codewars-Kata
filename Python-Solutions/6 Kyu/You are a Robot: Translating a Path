@@ -1,0 +1,36 @@
+https://www.codewars.com/kata/636173d79cf0de003d6834e4/train/python
+6
+
+    from itertools import groupby
+    def walk(path):
+        pattern = []
+        for x in ["".join(z) for y, z in groupby(path) if y != "-" and z]:
+            if x[0] == "^":
+                if len(x) > 1:
+                    pattern.append("Take " + str(len(x)) + " steps up")
+                elif len(x) == 1:
+                    pattern.append("Take 1 step up")
+                else:
+                    pattern.append("Paused")
+            elif x[0] == "v":
+                if len(x) > 1:
+                    pattern.append("Take " + str(len(x)) + " steps down")
+                elif len(x) == 1:
+                    pattern.append("Take 1 step down")
+                else:
+                    pattern.append("Paused")
+            elif x[0] == ">":
+                if len(x) > 1:
+                    pattern.append("Take " + str(len(x)) + " steps right")
+                elif len(x) == 1:
+                    pattern.append("Take 1 step right")
+                else:
+                    pattern.append("Paused")
+            elif x[0] == "<":
+                if len(x) > 1:
+                    pattern.append("Take " + str(len(x)) + " steps left")
+                elif len(x) == 1:
+                    pattern.append("Take 1 step left")
+                else:
+                    pattern.append("Paused")        
+        return "Paused" if path == '' else "\n".join(pattern)
