@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/583f158ea20cfcbeb400000a/train/python
+7
+
+    def arithmetic(a, b, operator):
+        return a + b if operator == "add" else a - b if operator == "subtract" else a * b if operator == "multiply" else a / b
