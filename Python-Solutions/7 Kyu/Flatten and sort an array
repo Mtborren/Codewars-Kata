@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57ee99a16c8df7b02d00045f/train/python
+7
+
+    def flatten_and_sort(array):
+        flat_array = [item for x in array for item in x]
+        return sorted(flat_array)
