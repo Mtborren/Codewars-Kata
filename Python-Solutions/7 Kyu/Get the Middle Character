@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/56747fd5cb988479af000028/train/python
+7
+
+    import math
+    def get_middle(s):
+        if len(s) % 2 == 0:
+            middle = int(len(s)/2)
+            return s[middle-1:middle+1]
+        else:
+            middle = int(len(s)/2)
+            return s[math.floor(middle)]
