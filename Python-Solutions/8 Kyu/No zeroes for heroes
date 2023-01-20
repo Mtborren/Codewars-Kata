@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/570a6a46455d08ff8d001002/train/python
+8
+
+    def no_boring_zeros(n):
+        return 0 if n == 0 else int(str(n).rstrip("0"))
