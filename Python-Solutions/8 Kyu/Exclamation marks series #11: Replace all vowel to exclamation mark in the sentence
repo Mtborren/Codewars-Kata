@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57fb09ef2b5314a8a90001ed/train/python
+8
+
+    def replace_exclamation(s):
+        news = ""
+        vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+        for x in s:
+            if x in vowels:
+                news += "!"
+            else:
+                news += x
+        return news
