@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/56541980fa08ab47a0000040/train/python
+7
+
+    def printer_error(s):
+        err = 0
+        total = 0
+        for lets in s:
+            if ord(lets) - 96 in range (1, 14):
+                total += 1
+            else:
+                err += 1
+                total += 1
+
+        return str(err) + "/" + str(total)
