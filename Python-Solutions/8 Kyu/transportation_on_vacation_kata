@@ -1,3 +1,6 @@
+https://www.codewars.com/kata/568d0dd208ee69389d000016/train/python
+
+    
     def rental_car_cost(d):
         total = d * 40
         print(total, d)
