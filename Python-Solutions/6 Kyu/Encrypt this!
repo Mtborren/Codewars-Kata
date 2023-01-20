@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5848565e273af816fb000449/train/python
+6
+
+    def encrypt_this(text):
+        if text == "":
+            return text
+        sent = text.split(" ")
+        for words in sent:
+            if len(words) == 1:
+                sent[sent.index(words)] = str(ord(words[0]))
+            elif len(words) == 2:
+                sent[sent.index(words)] = str(ord(words[0])) + words[1]
+            else:
+                sent[sent.index(words)] = str(ord(words[0])) + words[-1] + words[2:-1] + words[1]
+        return " ".join(sent)
