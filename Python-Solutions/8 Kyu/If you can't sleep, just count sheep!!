@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/train/python
+8
+
+    def count_sheep(n):
+        newstr = ""
+        count = 1
+        while count <= n:
+            newstr += str(count) + " sheep..."
+            count += 1
+        return newstr
