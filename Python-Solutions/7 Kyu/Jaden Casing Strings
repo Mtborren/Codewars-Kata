@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/python
+7
+
+    def to_jaden_case(string):
+        newstr = []
+        word = string.split(" ")
+        for words in word:
+            newstr.append(words.capitalize())
+        return " ".join(newstr)
