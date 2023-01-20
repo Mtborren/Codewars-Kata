@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python
+
+    def disemvowel(string_):
+        vowels = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
+        newstring = []
+        for letters in string_:
+            if letters in vowels:
+                del letters
+            else:
+                newstring.append(letters)
+        seperator = ""
+        newstring = seperator.join(newstring)
+        return newstring
