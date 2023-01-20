@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57eaec5608fed543d6000021/train/python
+7
+
+    def div_con(x):
+        sum_for_int, sum_for_str = sum([i for i in x if type(i) == int]), sum([int(i) for i in x if type(i) == str])
+        return sum_for_int - sum_for_str
