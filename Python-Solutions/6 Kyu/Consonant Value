@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/59c633e7dcc4053512000073/train/python
+6
+
+    import re
+    def solve(s):
+        total = 0
+        s_split = re.split(r'a|e|i|o|u', s)
+        for x in s_split:
+            print([ord(y)-96 for y in x])
+            s_sum = sum([ord(y)-96 for y in x])
+            if total < s_sum:
+                total = s_sum
+        return total
