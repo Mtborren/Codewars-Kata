@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/58f0ba42e89aa6158400000e/train/python
+7
+
+    def fold_to(distance):
+        thickness = 0.0001
+        folds = 0
+        if distance < 0:
+            return None
+        else:
+            while thickness < distance:
+                thickness *= 2
+                folds += 1
+        return folds
