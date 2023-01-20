@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5b180e9fedaa564a7000009a/train/python
+7
+
+    def solve(s):
+        return s.upper() if sum(1 for char in s if char.isupper()) > sum(1 for char in s if char.islower()) else s.lower()
