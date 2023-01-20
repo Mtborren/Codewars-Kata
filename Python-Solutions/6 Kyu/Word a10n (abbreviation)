@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/5375f921003bf62192000746/train/python
+6
+
+    def abbreviate(s):
+        word = ""
+        sentence = []
+        result = []
+        for i in s:
+            if i.isalpha():
+                word += i
+            else:
+                sentence.append(word)
+                sentence.append(i)
+                word = ""
+                continue
+        if word:
+            sentence.append(word)
+        for i in sentence:
+            if len(i) >= 4:
+                result += i[0] + str(len(i)-2) + i[-1]
+            else:
+                result += i
+        return "".join(result)
