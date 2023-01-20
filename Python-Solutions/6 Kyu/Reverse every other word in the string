@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/58d76854024c72c3e20000de/train/python
+6
+
+    def reverse_alternate(s):
+        spl = s.split(" ")
+        count = 1
+        new_s = []
+        for x in spl:
+            if count % 2 == 0 and x != "":
+                new_s.append(x[::-1])
+                count += 1
+            elif count % 2 != 0 and x != "":
+                new_s.append(x)
+                count += 1
+        return "" if new_s == [] else " ".join(new_s)
