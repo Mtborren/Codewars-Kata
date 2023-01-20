@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5865918c6b569962950002a1/python
+8
+
+    def str_count(strng, letter):
+        return list(strng).count(letter)
