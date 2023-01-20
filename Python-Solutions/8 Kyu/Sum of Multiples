@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57241e0f440cd279b5000829/train/python
+8
+
+    def sum_mul(n, m):
+        if n <= 0 or m <= 0:
+            return "INVALID"
+        else:
+            return sum(list(range(n,m,n)))
