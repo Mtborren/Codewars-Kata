@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9/train/python
+7
+
+    def row_weights(array):
+        even_row = []
+        odd_row = []
+        count = 1
+        for x in array:
+            if count % 2 != 0:
+                odd_row.append(x)
+                count += 1
+            else:
+                even_row.append(x)
+                count += 1
+        return (sum(odd_row), sum(even_row))
