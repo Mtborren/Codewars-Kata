@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57cc981a58da9e302a000214/train/python
+
+    def small_enough(array, limit):
+        status = True
+        for item in array:
+            if item <= limit:
+                pass
+            else:
+                status = False
+                break
+        return status
