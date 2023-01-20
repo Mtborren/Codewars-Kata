@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5899642f6e1b25935d000161/train/python
+8
+
+    def merge_arrays(arr1, arr2):
+        new_arr = []
+        for x in arr1:
+            if x not in new_arr:
+                new_arr.append(x)
+        for x in arr2:
+            if x not in new_arr:
+                new_arr.append(x)
+        return sorted(new_arr)
