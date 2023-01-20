@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/57a049e253ba33ac5e000212/train/python
+7
+
+    def factorial(n):
+        if n == 0:
+            return 1
+        elif n == 1 or n == 2:
+            return n
+        else:
+            factor = 1
+            range_n = list(nums for nums in range(1, n+1))
+            for nums in range_n:
+                factor = factor * nums
+            return factor
