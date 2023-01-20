@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/57b58827d2a31c57720012e8/train/python
+8
+
+    def fuel_price(litres, price_per_litre):
+        if price_per_litre:
+            if litres >= 10:
+                price = price_per_litre - .25
+            elif litres >= 8:
+                price = price_per_litre - .20
+            elif litres >= 6:
+                price = price_per_litre - .15
+            elif litres >= 4:
+                price = price_per_litre - .10
+            elif litres >= 2:
+                price = price_per_litre - .05
+        return round(price*litres, 2)
