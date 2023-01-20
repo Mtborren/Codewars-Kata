@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57f609022f4d534f05000024/train/python
+7
+
+    def stray(arr):
+        sarr = sorted(arr)
+        if sarr[0] == sarr[1]:
+            return sarr[-1]
+        else:
+            return sarr[0]
