@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57cfdf34902f6ba3d300001e/train/python
+8
+
+    def two_sort(array):
+        words = sorted(array)
+        x = words[0]
+        newword = []
+        for y in x:
+            newword.append(y)
+        return "***".join(newword)
