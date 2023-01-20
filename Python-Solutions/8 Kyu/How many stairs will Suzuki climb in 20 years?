@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56fc55cd1f5a93d68a001d4e/train/python
+8
+
+    def stairs_in_20(stairs):
+        total = 0
+        for x in stairs:
+            total += sum(x)
+        return total*20
