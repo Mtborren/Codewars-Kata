@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/586f6741c66d18c22800010a/train/python
+7
+
+    def sequence_sum(begin_number, end_number, step):
+        total = 0
+        for nums in range(begin_number, end_number+1, step):
+            total += nums
+        return total
