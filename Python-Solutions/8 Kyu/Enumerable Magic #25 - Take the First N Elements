@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/545afd0761aa4c3055001386/train/python
+8
+
+    def take(arr,n):
+        return arr[:n]
