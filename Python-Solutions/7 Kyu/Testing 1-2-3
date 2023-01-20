@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/python
+
+    def number(lines):
+        if lines == []:
+            return []
+        numlines = []
+        count = 1
+        for let in lines:
+            numlines.append(str(count) + ": " + let)
+            count += 1
+        return numlines
