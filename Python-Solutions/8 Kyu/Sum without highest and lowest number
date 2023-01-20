@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/python
+
+    def sum_array(arr):
+        numlist = []
+        if arr == None or len(arr) < 3:
+            return 0
+        for nums in arr:
+            numlist.append(nums)
+        return sum(sorted(numlist)[1:len(sorted(numlist))-1])
