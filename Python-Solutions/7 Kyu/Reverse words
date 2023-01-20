@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/python
+7
+
+    def reverse_words(text):
+        spl = text.split(" ")
+        newtext = []
+        for word in spl:
+            newtext.append(word[::-1])
+        return " ".join(newtext)
