@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/57f8ff867a28db569e000c4a/train/python
+6
+
+import re
+def kebabize(string):
+    new_string = []
+    pattern = '[0-9]'
+    x = "".join([re.sub(pattern, '', i) for i in string])
+    y = re.sub( r"([A-Z])", r" \1", x).split()
+    for z in y:
+        new_string.append(z.lower())
+    return '-'.join(new_string)
