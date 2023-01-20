@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/581e014b55f2c52bb00000f8/train/python
+6
+
+    def decipher_this(string):
+        words = string.split(" ")
+        newsent = []
+        for chars in words:
+            num = ""
+            for nums in chars:
+                if nums.isnumeric():
+                    num += nums
+            letter = chr(int(num))
+            newword = chars.replace(num, letter)
+            if len(newword) == 1 or len(newword) == 2:
+                newsent.append(newword)
+            else:
+                newsent.append(newword[0] + newword[-1] + newword[2:-1] + newword[1])
+        return " ".join(newsent)
