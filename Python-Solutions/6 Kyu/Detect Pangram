@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/545cedaa9943f7fe7b000048/python
+6
+
+    def is_pangram(s):
+        newdict = {}
+        slower = s.lower()
+        for lets in slower:
+            if lets.isalpha():
+                newdict[lets] = slower.count(lets)
+        return len(sorted(newdict)) == 26
