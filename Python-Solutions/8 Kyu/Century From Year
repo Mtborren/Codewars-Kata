@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/train/python
+
+    import math
+    def century(year):
+        if year < 100:
+            return 1
+        elif year < 1000:
+            year = str(year)
+            beginning = year[0]
+            ending = year[len(year) - 2] + year[len(year) - 1]
+            if int(ending) == 0:
+                return beginning
+            else:
+                return int(beginning) + 1
+        else:
+            year = str(year)
+            beginning = year[0] + year[1]
+            ending = year[len(year) - 2] + year[len(year) - 1]
+            if int(ending) == 0:
+                return int(beginning)
+            else:
+                return int(beginning) + 1
