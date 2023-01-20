@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57e92e91b63b6cbac20001e5/train/python
+8
+
+    def duty_free(price, discount, holiday_cost):
+        actual_price = price * (discount * .01)
+        cost = 0
+        bottle_count = 0
+        while cost < holiday_cost and (holiday_cost - cost) > actual_price :
+            cost += actual_price
+            bottle_count += 1
+        return bottle_count
