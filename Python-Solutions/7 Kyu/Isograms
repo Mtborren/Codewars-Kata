@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/python
+
+    def is_isogram(string):
+        lower = string.lower()
+        count = 1
+        for lets in lower:
+            if lower.count(lets) > 1:
+                count += 1
+        if count > 1:
+            return False
+        else:
+            return True
