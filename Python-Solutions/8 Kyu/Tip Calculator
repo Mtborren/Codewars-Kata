@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/56598d8076ee7a0759000087/train/python
+8
+
+    def power_of_two(x):
+        exp = 0
+        while True:
+            if 2 ** exp > x:
+                return False
+            elif 2 ** exp == x:
+                return True
+            exp += 1
