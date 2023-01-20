@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/56b5afb4ed1f6d5fb0000991/train/python
+
+    def rev_rot(strng, sz):
+        numbers = []
+        if sz <= 0 or strng == None or sz > len(strng):
+            return ""
+        else:
+            for i in range(0, len(strng), sz):
+                group = strng[i:i+sz]
+                if len(group) == sz:
+                    sum = 0
+                    for nums in group:
+                        sum += (int(nums) * int(nums) * int(nums))
+                    if sum % 2 == 0:
+                        numbers.append(group[::-1])
+                    else:
+                        numbers.append((group+group[0])[1:])
+        return "".join(numbers)
