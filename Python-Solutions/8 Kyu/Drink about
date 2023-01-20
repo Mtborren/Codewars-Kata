@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/56170e844da7c6f647000063/train/python
+8
+
+    def people_with_age_drink(age):
+        return "drink toddy" if age <= 13 else "drink coke" if age > 13 and age < 18 else "drink beer" if age > 17 and age < 21 else "drink whisky"
