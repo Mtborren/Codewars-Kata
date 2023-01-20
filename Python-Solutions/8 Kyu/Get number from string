@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57a37f3cbb99449513000cd8/train/python
+8
+
+    def get_number_from_string(string):
+        nums = ""
+        for x in string:
+            if x.isdigit():
+                nums += x
+        return int(nums)
