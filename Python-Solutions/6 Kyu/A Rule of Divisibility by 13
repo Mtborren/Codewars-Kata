@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/564057bc348c7200bd0000ff/train/python
+6
+
+    def data_reverse(data):
+        chunks = []
+        for x in range(0, len(data), 8):
+            chunks.append(data[x:x + 8])
+        newnum = []
+        for x in chunks[::-1]:
+            for y in x:
+                newnum.append(y)
+        return newnum
