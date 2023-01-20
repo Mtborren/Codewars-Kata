@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/54df2067ecaa226eca000229/train/python
+7
+
+    def f(n):
+        if type(n) is not int or n <= 0:
+            return None
+        else:
+            return sum(range(0, n+1))
