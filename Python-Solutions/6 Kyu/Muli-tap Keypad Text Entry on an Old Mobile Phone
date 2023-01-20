@@ -1,0 +1,22 @@
+https://www.codewars.com/kata/54a2e93b22d236498400134b/train/python
+6
+
+    def presses(phrase):
+        total = 0
+        one_tap = ['1', 'A', 'D', 'G', 'J', 'M', 'P', 'T', 'W', '*', '#', " "]
+        two_tap = ['B', 'E', 'H', 'K', 'N', 'Q', 'U', 'X', '0']
+        three_tap = ['C', 'F', 'I', 'L', 'O', 'R', 'V', 'Y']
+        four_tap = ['2', '3', '4', '5', '6', 'S', '8', 'Z']
+        five_tap = ['7', '9']
+        for x in phrase.upper():
+            if x in one_tap:
+                total += 1
+            elif x in two_tap:
+                total += 2
+            elif x in three_tap:
+                total += 3
+            elif x in four_tap:
+                total += 4
+            else:
+                total += 5
+        return total
