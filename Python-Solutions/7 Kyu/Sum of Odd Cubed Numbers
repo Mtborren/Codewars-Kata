@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/580dda86c40fa6c45f00028a/train/python
+7
+
+    def cube_odd(arr):
+        cube_arr = []
+        odd_cube = []
+        for x in arr:
+            if type(x) != int:
+                return None
+                break
+            else:
+                cube_arr.append(x*x*x)
+        for x in cube_arr:
+            if x % 2 != 0:
+                odd_cube.append(x)
+        return sum(odd_cube)
