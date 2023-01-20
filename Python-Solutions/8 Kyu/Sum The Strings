@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5966e33c4e686b508700002d/train/python
+8
+
+    def sum_str(a, b):
+        return "0" if a == "" and b == "" else str(0 + int(b)) if a == "" else str(int(a) + 0) if b == "" else str(int(a) + int(b))
