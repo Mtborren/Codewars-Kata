@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa/train/python
+
+    def open_or_senior(data):
+        status = []
+        for num in data:
+            age = num[0]
+            handicap = num[1]
+            if age >= 55 and handicap > 7:
+                status.append("Senior")
+            else:
+                status.append("Open")
+        return status
