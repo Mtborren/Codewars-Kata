@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58bf9bd943fadb2a980000a7/train/python
+8
+
+    def who_is_paying(name):
+        return [name[0:2]] if name == name[0:2] else [name, name[0:2]]
