@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/534d0a229345375d520006a0/train/python
+7
+
+    def greet(name):
+        return "Hello " + name.title() + "!"
