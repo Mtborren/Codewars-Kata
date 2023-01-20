@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55908aad6620c066bc00002a/train/python
+
+    def xo(s):
+        x = 0
+        o = 0
+        for letter in s:
+            if letter == "X" or letter == "x":
+                x += 1
+            elif letter == "O" or letter == "o":
+                o += 1
+        return x == o
