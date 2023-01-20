@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/54e6533c92449cc251001667/train/python
+6
+
+    def unique_in_order(iterable):
+        newlist = []
+        for item in iterable:
+            if newlist == [] or item != newlist[-1]:
+                newlist.append(item)
+        return newlist
