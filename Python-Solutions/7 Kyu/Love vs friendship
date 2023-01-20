@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/59706036f6e5d1e22d000016/train/python
+7
+
+    def words_to_marks(s):
+        total = 0
+        for x in list(s):
+            total += ord(x)-96
+        return total
