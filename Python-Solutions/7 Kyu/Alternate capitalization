@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/59cfc000aeb2844d16000075/train/python
+7
+
+    def capitalize(s):
+        first = ""
+        second = ""
+        count = 1
+        for x in s:
+            if count % 2 != 0:
+                first += x.upper()
+                second += x.lower()
+                count += 1
+            elif count % 2 == 0:
+                second += x.upper()
+                first += x.lower()
+                count += 1
+        return [first, second]
