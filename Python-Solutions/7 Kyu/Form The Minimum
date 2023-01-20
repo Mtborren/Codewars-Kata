@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5ac6932b2f317b96980000ca/train/python
+7
+
+    def min_value(digits):
+        nums = []
+        for x in sorted(digits):
+            if x not in nums:
+                nums.append(x)
+        numstr = ""
+        for x in nums:
+            numstr += str(x)
+        return int(numstr)
