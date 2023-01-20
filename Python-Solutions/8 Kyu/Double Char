@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56b1f01c247c01db92000076/train/python
+8
+
+    def double_char(s):
+        new_s = ""
+        for x in s:
+            new_s += (x+x)
+        return new_s
