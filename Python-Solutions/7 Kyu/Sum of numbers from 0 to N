@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/56e9e4f516bcaa8d4f001763/train/python
+7
+
+    def show_sequence(n):
+        num = []
+        total = 0
+        if n == 0:
+            return "0=0"
+        elif n > 0:
+            total += sum(range(0, n+1))
+            for nums in range(0, n+1):
+                num.append(str(nums))
+            numlist = "+".join(num)
+            return numlist + " = " + str(total)
+        else:
+            return str(n)+ "<" + "0"
