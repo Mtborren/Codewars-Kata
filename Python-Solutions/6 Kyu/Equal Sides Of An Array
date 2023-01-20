@@ -1,0 +1,8 @@
+
+https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/python
+
+    def find_even_index(arr):
+        for numbers in range(len(arr)):
+            if sum(arr[:numbers]) == sum(arr[numbers+1:]):
+                return numbers
+        return -1
