@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/python
+
+    def count_positives_sum_negatives(arr):
+        newarr = [0, 0]
+        for nums in arr:
+            if nums > 0:
+                newarr[0] += 1
+            else:
+                newarr[1] += nums
+        if arr == []:
+            return []
+        return newarr
