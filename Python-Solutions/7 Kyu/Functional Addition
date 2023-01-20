@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/538835ae443aae6e03000547/train/python
+7
+
+    def add(n):
+        def addition(k):
+            return n + k
+        return addition
