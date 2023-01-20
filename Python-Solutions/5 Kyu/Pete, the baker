@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/525c65e51bf619685c000059/train/python
+
+    def cakes(recipe, available):
+        count = []
+        for x in recipe:
+            if x not in available:
+                return 0
+            elif x in available:
+                count.append(int(available[x] / recipe[x]))
+        return min(count)
