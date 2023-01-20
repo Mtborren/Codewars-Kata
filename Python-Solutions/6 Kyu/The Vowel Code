@@ -1,0 +1,36 @@
+https://www.codewars.com/kata/53697be005f803751e0015aa/train/python
+6
+
+    def encode(st):
+        enc_word = ""
+        for x in st:
+            if x == "a":
+                enc_word += '1'
+            elif x == "e":
+                enc_word += '2'
+            elif x == "i":
+                enc_word += '3'
+            elif x == "o":
+                enc_word += '4'
+            elif x == "u":
+                enc_word += '5'
+            else: 
+                enc_word += x
+        return enc_word
+
+    def decode(st):
+        dec_word = ""
+        for x in st:
+            if x == "1":
+                dec_word += 'a'
+            elif x == "2":
+                dec_word += 'e'
+            elif x == "3":
+                dec_word += 'i'
+            elif x == "4":
+                dec_word += 'o'
+            elif x == "5":
+                dec_word += 'u'
+            else: 
+                dec_word += x
+        return dec_word
