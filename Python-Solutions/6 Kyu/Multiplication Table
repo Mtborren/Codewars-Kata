@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/train/python
+6
+
+    def multiplication_table(size):
+        mult = []
+        if size == 1:
+            return [[1]]
+        else:
+            count = 1
+            while count <= size:
+                for nums in list(range(1, size+1)):
+                    mult.append(nums * count)
+                count += 1
+            x = [mult[i:i + size] for i in range(0, len(mult), size)]       
+            return x
