@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58daa7617332e59593000006/train/python
+7
+
+    def find_longest(arr):
+        lrgnum = []
+        for x in arr:
+            print(x)
+            if lrgnum == []:
+                lrgnum.append(str(x))
+            elif len(str(x)) > len(lrgnum[0]):
+                lrgnum[0] = str(x)
+        return int(lrgnum[0])
