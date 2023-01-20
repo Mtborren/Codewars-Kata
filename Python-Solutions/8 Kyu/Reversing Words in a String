@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57a55c8b72292d057b000594/train/python
+8
+
+    def reverse(st):
+        splstr = st.split(" ")
+        revst = splstr[::-1]
+        newstr = []
+        for x in revst:
+            if x != '':
+                newstr.append(x)
+        return " ".join(newstr)
