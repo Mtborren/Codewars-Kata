@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5862f663b4e9d6f12b00003b/train/python
+8
+
+    def guess_blue(blue_start, red_start, blue_pulled, red_pulled):
+        blue_odds = blue_start - blue_pulled
+        red_odds = red_start - red_pulled
+        total = blue_odds + red_odds
+        return blue_odds / total
