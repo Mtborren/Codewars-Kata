@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57fae964d80daa229d000126/train/python
+8
+
+    def remove(s):
+        if len(s) == 0 or s[-1] != "!":
+            return s
+        else:
+            return s[:-1]
