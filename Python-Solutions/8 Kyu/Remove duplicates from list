@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118/train/python
+8
+
+  def distinct(seq):
+      new_seq = []
+      for x in seq:
+          if x not in new_seq:
+              new_seq.append(x)
+      return new_seq
