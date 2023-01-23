@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/56efc695740d30f963000557/train/python
+8
+
+  def to_alternating_case(string):
+      new_string = ''
+      for x in string:
+          if x.isalpha() == False:
+              new_string += x
+          elif x.islower():
+              new_string += x.upper()
+          elif x.isupper():
+              new_string += x.lower()
+      return new_string
