@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/570e8ec4127ad143660001fd/train/python
+8
+
+  def billboard(name, price=30):
+      cost = 0
+      if price:
+          for x in name:
+              cost += price
+          return cost
+      else:
+          for x in name:
+              cost += price
+          return cost
