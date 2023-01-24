@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/562f91ff6a8b77dfe900006e/train/python
+7
+
+  import math
+  def movie(card, ticket, perc):
+      total_card = card
+      total_tickets = 0
+      x = 1
+      while math.ceil(total_card) >= total_tickets:
+          total_card += ticket *(perc**x)
+          total_tickets += ticket
+          x += 1
+      return x - 1
