@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5713bc89c82eff33c60009f7/train/python
+8
+
+  def to_freud(sentence):
+      s = sentence.split(" ")
+      new_s = []
+      if sentence and sentence != "":
+          for x in s:
+              new_s.append("sex")
+          return " ".join(new_s)
+      else:
+          return ""
