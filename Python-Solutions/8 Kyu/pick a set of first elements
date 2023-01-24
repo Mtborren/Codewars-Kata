@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/572b77262bedd351e9000076/train/python
+8
+
+  def first(seq, n=True): 
+      if n == 0:
+          return []
+      else: 
+          return seq[0:n]
