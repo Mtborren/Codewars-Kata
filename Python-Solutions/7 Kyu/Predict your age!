@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5aff237c578a14752d0035ae/train/python
+7
+
+  import math
+  def predict_age(age_1, age_2, age_3, age_4, age_5, age_6, age_7, age_8):
+      age_prods = []
+      age_prods.append(age_1 * age_1)
+      age_prods.append(age_2 * age_2)
+      age_prods.append(age_3 * age_3)
+      age_prods.append(age_4 * age_4)
+      age_prods.append(age_5 * age_5)
+      age_prods.append(age_6 * age_6)
+      age_prods.append(age_7 * age_7)
+      age_prods.append(age_8 * age_8)
+      age_sum = sum(age_prods)
+      age_sq = math.sqrt(age_sum)
+      return int(age_sq / 2)
