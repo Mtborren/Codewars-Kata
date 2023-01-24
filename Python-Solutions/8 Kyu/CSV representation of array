@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036/train/python
+8
+
+  def to_csv_text(array):
+      new_array = []
+      for x in array:
+          new_array.append(",".join([str(i) for i in x]))
+      return "\n".join(new_array)
