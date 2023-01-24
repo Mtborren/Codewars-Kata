@@ -1,0 +1,65 @@
+https://www.codewars.com/kata/586538146b56991861000293/train/python
+6
+
+  def to_nato(words):
+      string = ""
+      nato = []
+      for x in words.lower():
+          if x.isalpha() or x in ".?!":
+              string += x
+      for x in string:
+          if x == "a":
+              nato.append("Alfa")
+          elif x == "b":
+              nato.append("Bravo")
+          elif x == "c":
+              nato.append("Charlie")
+          elif x == "d":
+              nato.append("Delta")
+          elif x == "e":
+              nato.append("Echo")
+          elif x == "f":
+              nato.append("Foxtrot")
+          elif x == "g":
+              nato.append("Golf")
+          elif x == "h":
+              nato.append("Hotel")
+          elif x == "i":
+              nato.append("India")
+          elif x == "j":
+              nato.append("Juliett")
+          elif x == "k":
+              nato.append("Kilo")
+          elif x == "l":
+              nato.append("Lima")
+          elif x == "m":
+              nato.append("Mike")
+          elif x == "n":
+              nato.append("November")
+          elif x == "o":
+              nato.append("Oscar")
+          elif x == "p":
+              nato.append("Papa")
+          elif x == "q":
+              nato.append("Quebec")
+          elif x == "r":
+              nato.append("Romeo")
+          elif x == "s":
+              nato.append("Sierra")
+          elif x == "t":
+              nato.append("Tango")
+          elif x == "u":
+              nato.append("Uniform")
+          elif x == "v":
+              nato.append("Victor")
+          elif x == "w":
+              nato.append("Whiskey")
+          elif x == "x":
+              nato.append("Xray")
+          elif x == "y":
+              nato.append("Yankee")
+          elif x == "z":
+              nato.append("Zulu")
+          else:
+              nato.append(x)
+      return " ".join(nato)
