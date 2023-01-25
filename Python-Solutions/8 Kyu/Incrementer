@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/590e03aef55cab099a0002e8/train/python
+7
+
+  def incrementer(nums):
+      new_nums = []
+      count = 1
+      if nums == []:
+          return nums
+      for x in nums:
+          if len(str(x+count)) == 2:
+              new_nums.append(int(str(x+count)[-1]))
+              count += 1
+          else:
+              new_nums.append(x+count)
+              count += 1
+      return new_nums
