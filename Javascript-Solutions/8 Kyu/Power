@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/562926c855ca9fdc4800005b/train/javascript
+8
+
+function numberToPower(number, power){
+  let sum = 1
+  for(let i = 0; i < power; i++){
+    sum *= number
+  }
+  return sum
+}
