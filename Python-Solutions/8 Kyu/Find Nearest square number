@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5a805d8cafa10f8b930005ba/train/python
+8
+
+  import math
+  def nearest_sq(n):
+      x = math.floor(math.sqrt(n)) ** 2
+      y = math.ceil(math.sqrt(n)) ** 2
+      if x == n or n - x < y - n:
+          return x
+      else:
+          return y
