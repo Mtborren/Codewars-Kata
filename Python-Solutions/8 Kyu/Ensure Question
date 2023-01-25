@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5866fc43395d9138a7000006/train/python
+8
+
+  def ensure_question(s):
+      return "?" if len(s) == 0 else s if s[-1] == "?" else s + "?"
