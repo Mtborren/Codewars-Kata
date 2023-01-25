@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/5803956ddb07c5c74200144e/train/javascript
+8
+
+  function datingRange(age){
+    if(age<=14){
+      let min=Math.floor(age - .10 * age)
+      let max=Math.floor(age + .10 * age)
+      return min.toString() + "-" + max.toString()
+    }
+    else{
+      let min=Math.floor(age/2 + 7)
+      let max=Math.floor((age-7)*2)
+      return min.toString() + "-" + max.toString()  
+    }
+  }
