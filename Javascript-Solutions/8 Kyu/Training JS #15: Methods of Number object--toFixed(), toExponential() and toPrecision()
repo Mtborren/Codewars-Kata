@@ -1,0 +1,4 @@
+https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+8
+
+howManySmaller = (arr,n) => arr.filter(element => +element.toFixed(2) < n).length 
