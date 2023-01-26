@@ -1,0 +1,23 @@
+https://www.codewars.com/kata/57238ceaef9008adc7000603/train/javascript
+8
+
+  function colorOf(r,g,b){
+    let hex_arr = "#"
+    if (r.toString(16).length == 1){
+      hex_arr += '0' + r.toString(16)
+    } else if (r.toString(16).length == 2){
+      hex_arr += r.toString(16)
+    } 
+    if (g.toString(16).length == 1){
+      hex_arr += '0' + g.toString(16)
+    } else if (g.toString(16).length == 2){
+      hex_arr += g.toString(16)
+    }  
+    if (b.toString(16).length == 1){
+      hex_arr += '0' + b.toString(16)
+    } else if (b.toString(16).length == 2){
+      hex_arr += b.toString(16)
+    }
+    return hex_arr
+  }
+
