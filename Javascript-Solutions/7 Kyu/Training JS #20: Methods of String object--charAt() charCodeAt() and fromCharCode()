@@ -1,0 +1,27 @@
+https://www.codewars.com/kata/57284d23e81185ae6200162a
+7
+
+  function topSecret(str){
+    let dict = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h', 'i','j', 'k', 'l', 'm', 'n', 'o', 'p',
+  'q', 'r','s', 't', 'u', 'v', 'w', 'x', 'y','z'];
+   let Dict = ['A', 'B', 'C', 'D','E', 'F', 'G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'O', 'P',
+  'Q', 'R','S', 'T', 'U', 'V', 'W', 'X', 'Y','Z'];
+    return str.replace(/[a-z]/gi,v=>{
+    if (v===v.toLowerCase()){
+    return dict.indexOf(v.toLowerCase())-3<0?
+    dict[dict.indexOf(v.toLowerCase())-3+26]
+   :dict[dict.indexOf(v.toLowerCase())-3]}
+   if (v===v.toUpperCase()){
+    return Dict.indexOf(v)-3<0?
+    Dict[Dict.indexOf(v)-3+26]
+   :Dict[Dict.indexOf(v)-3]}
+   return v}
+   );
+
+  }
+  //question1: The top secret file number is...
+  answer1="3854";
+  //question2: Super agent's name is...
+  answer2="PrSkJ";
+  //question3: He stole the treasure is...
+  answer3="Expired biscuits";
