@@ -1,3 +1,13 @@
 https://www.codewars.com/kata/5728203b7fc662a4c4000ef3/train/javascript
 7
 
+  function alienLanguage(str){
+    let word = str.toUpperCase().split(" ")
+    let newStr = []
+    for (x in word){
+      let newWord = word[x].slice(0, -1) + word[x].slice(-1,0).toLowerCase()
+      let lastLet = word[x].slice(-1).toLowerCase()
+      newStr.push(newWord+lastLet)
+    }
+    return newStr.join(" ")
+  }
