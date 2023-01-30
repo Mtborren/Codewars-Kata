@@ -1,0 +1,21 @@
+https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript
+7
+
+  getSum = (a, b) => {
+    let sum = 0;
+    if (a==b) {
+      return a
+    }
+    else if (a < b) {
+      for (let i = a; a <= b; i++) {
+        sum += i
+        a += 1
+      }
+    } else if (a > b) {
+      for (let i = b; b <= a; i++) {
+        sum += i
+        b += 1
+      }
+    }
+    return sum
+  }
