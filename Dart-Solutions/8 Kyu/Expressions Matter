@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5ae62fcf252e66d44d00008e/train/dart
+8
+
+  import 'dart:math';
+  int expressionMatter(a, b, c) {
+    var comb1 = a + b + c;
+    var comb2 = a * b * c;
+    var comb3 = (a + b) * c;
+    var comb4 = a * (b + c);
+    List combos = [comb1, comb2, comb3, comb4];
+    combos.sort();
+    return combos.last;
+  }
