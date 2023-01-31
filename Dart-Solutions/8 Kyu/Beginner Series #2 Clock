@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/dart
+8
+
+  int past(int h, int m, int s) {
+    var seconds = s * 1000;
+    var minutes = (m*60) * 1000;
+    var hours = ((h * 60) * 60) * 1000;
+    return seconds+minutes+hours;
+  }
