@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/dart
+8
+
+  List<int> invert(List<int> arr) {
+    List<int> nums = [];
+    for (var x in arr) {
+      nums.add(0-x);
+    }
+    return nums;
+  }
