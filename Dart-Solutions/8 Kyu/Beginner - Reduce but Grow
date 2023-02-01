@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57f780909f7e8e3183000078/train/dart
+8
+
+  int grow(List<int> arr) {
+    var result = 1;
+    for (var x in arr) {
+      result *= x;
+    }
+    return result;
+  }
