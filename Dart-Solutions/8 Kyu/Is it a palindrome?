@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57a1fd2ce298a731b20006a4/train/dart
+8
+
+  bool isPalindrome(String x) {
+    var chars = x.toLowerCase().split("").reversed.join();
+    if (chars == x.toLowerCase()) {
+     return true; 
+    } else {
+      return false;
+    }
+  }
