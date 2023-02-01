@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/58cb43f4256836ed95000f97/train/dart
+8
+
+  int findDifference(List<int> a, List<int> b) {
+    var totalA = 1;
+    var totalB = 1;
+    for (var x in a) {
+      totalA *= x;
+    }
+    for (var x in b) {
+      totalB *= x;
+    }
+    if (totalA > totalB) {
+      return totalA - totalB;
+    } else {
+      return totalB - totalA;
+    }
+  }
